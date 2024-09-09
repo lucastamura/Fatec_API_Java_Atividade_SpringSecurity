@@ -3,15 +3,35 @@
 ## Descrição
 Esta é uma aplicação REST construída utilizando Spring Boot, que realiza operações CRUD em uma entidade no banco de dados e utiliza Spring Security como camada de segurança.
 
-## Instruções
-1. Clone este repositório:
+## Etapas da resolução da atividade
+1. Clone do repositório tamplate:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/marcoweb/simple-spring-template.git
     ```
-2. Navegue até o diretório do projeto:
+2. Inicialização do projeto:
     ```bash
-    cd seu-repositorio
+   gradle build
     ```
+
+3. Crie uma pasta chamada 'model' na raiz 
+    ```
+    app/src/main/java/application
+    ```
+
+4. Criando model "Filme". Importe as seguintes bibliotecas e crie os atributos:
+    ```properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados
+    spring.datasource.username=seu_usuario
+    spring.datasource.password=sua_senha
+    spring.jpa.hibernate.ddl-auto=update
+    ```
+
+
+
+3. Criando contollers. A API será criada com base em um repositório de filmes.
+
+
+
 3. Configure o banco de dados no arquivo `application.properties`:
     ```properties
     spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados
