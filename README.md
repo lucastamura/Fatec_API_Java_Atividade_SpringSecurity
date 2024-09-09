@@ -27,7 +27,22 @@ Esta é uma aplicação REST construída utilizando Spring Boot, que realiza ope
     import jakarta.persistence.Table;
     ```
 
-5. Crie os atributos noome, categoria, e duração para o modelo de filmes. Após clique com o botão direito > "Searce actions" > "Generate get and set".
+5. Crie os atributos nome, categoria, e duração para o modelo de filmes. Após clique com o botão direito > "Searce actions" > "Generate get and set".
+
+6. Crie o model "Usuario" importando as mesmas bibliotecas anteriores. Crie os atributos nomeDeUsuario e senha e gere os get and set.
+
+7. Crie uma pasta chamada 'repository' na raiz 
+    ```
+    app/src/main/java/application
+    ```
+
+6. Crie os repositórios dos Filmes e dos Usuarios.
+
+
+
+
+
+
 
 
 3. Criando contollers. A API será criada com base em um repositório de filmes.
