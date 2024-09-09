@@ -18,14 +18,16 @@ Esta é uma aplicação REST construída utilizando Spring Boot, que realiza ope
     app/src/main/java/application
     ```
 
-4. Criando model "Filme". Importe as seguintes bibliotecas e crie os atributos:
+4. Crie model "Filme". Importe as seguintes bibliotecas:
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados
-    spring.datasource.username=seu_usuario
-    spring.datasource.password=sua_senha
-    spring.jpa.hibernate.ddl-auto=update
+    import jakarta.persistence.Entity;
+    import jakarta.persistence.GeneratedValue;
+    import jakarta.persistence.GenerationType;
+    import jakarta.persistence.Id;
+    import jakarta.persistence.Table;
     ```
 
+5. Crie os atributos noome, categoria, e duração para o modelo de filmes. Após clique com o botão direito > "Searce actions" > "Generate get and set".
 
 
 3. Criando contollers. A API será criada com base em um repositório de filmes.
