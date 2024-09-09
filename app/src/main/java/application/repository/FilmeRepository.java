@@ -4,7 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import application.model.Filme;
 
-public class FilmeRepository extends CrudRepository<Filme, Long>{
+public interface FilmeRepository extends CrudRepository<Filme, Long> {
     
 }
-

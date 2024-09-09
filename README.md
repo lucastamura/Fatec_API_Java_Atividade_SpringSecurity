@@ -18,27 +18,18 @@ Esta é uma aplicação REST construída utilizando Spring Boot, que realiza ope
     app/src/main/java/application
     ```
 
-4. Crie model "Filme". Importe as seguintes bibliotecas:
-    ```properties
-    import jakarta.persistence.Entity;
-    import jakarta.persistence.GeneratedValue;
-    import jakarta.persistence.GenerationType;
-    import jakarta.persistence.Id;
-    import jakarta.persistence.Table;
-    ```
+4. Crie os atributos nome, categoria, e duração para o modelo de filmes. Após clique com o botão direito > "Searce actions" > "Generate get and set".
 
-5. Crie os atributos nome, categoria, e duração para o modelo de filmes. Após clique com o botão direito > "Searce actions" > "Generate get and set".
+5. Crie o model "Usuario" importando as mesmas bibliotecas anteriores. Crie os atributos nomeDeUsuario e senha e gere os get and set.
 
-6. Crie o model "Usuario" importando as mesmas bibliotecas anteriores. Crie os atributos nomeDeUsuario e senha e gere os get and set.
-
-7. Crie uma pasta chamada 'repository' na raiz 
+6. Crie uma pasta chamada 'repository' na raiz 
     ```
     app/src/main/java/application
     ```
 
-6. Crie os repositórios dos Filmes e dos Usuarios.
+7. Crie os repositórios dos Filmes e dos Usuarios.
 
-
+8. Na pasta 'controller', crie o arquivo FilmeController.java e defina os métodos GET, POST, PACTH e DELETE.
 
 
 
