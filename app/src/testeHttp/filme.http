@@ -1,0 +1,35 @@
+@baseUrl = https://8080-lucastamura-fatecapijav-8kus9xu1we0.ws-us116.gitpod.io
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGFyZWZhcyIsInN1YiI6InVzdWFyaW8iLCJleHAiOjE3MjU5NTAxNTZ9.t5_mFsBrFUBgjdHD-Hni19KnQxZW0f9wlY6txocCh0Y
+
+###
+GET {{baseUrl}}/filmes
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}/filmes
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "MAtrix",
+    "caregoria": "Ficção",
+    "duracao": 465
+}
+
+###
+GET {{baseUrl}}/filmes/2
+Authorization: Bearer {{token}}
+
+###
+PUT {{baseUrl}}/filmes/2
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Viagem ao centro do universo",
+    "caregoria": "Ficção cientifica",
+    "duracao": 124
+}
+###
+DELETE {{baseUrl}}/filmes/1
+Authorization: Bearer {{token}}

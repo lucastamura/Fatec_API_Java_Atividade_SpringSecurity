@@ -1,0 +1,11 @@
+@baseUrl = https://8080-lucastamura-fatecapijav-8kus9xu1we0.ws-us116.gitpod.io
+
+###
+POST {{baseUrl}}/auth
+Content-Type: application/json
+
+{
+    "nomeDeUsuario": "usuario",
+    "senha": "user"
+}
+
